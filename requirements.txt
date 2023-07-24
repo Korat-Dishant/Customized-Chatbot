@@ -1,3 +1,4 @@
+tiktoken
 llama_index
 langchain
 ipython
