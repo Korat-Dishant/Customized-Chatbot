@@ -1,8 +1,9 @@
-from fastapi import FastAPI
+from fastapi import FastAPI , Header
+from typing import Annotated, List, Union
+
 from fastapi.middleware.cors import CORSMiddleware
 
 from OpenAI import ask_ai
-
 
 
 
@@ -18,9 +19,14 @@ app.add_middleware(
 )
 
 
-@app.post("/extract", summary="custom Chat bot", tags=["Chatbot"])
+@app.post("/extract", summary="pass value using param", tags=["Chatbot"])
 def extract(data: str) -> str:
     return str(ask_ai(data))
+
+@app.post("/ask" ,  summary="pass value using header")
+async def read_items(sendQuery: Annotated[Union[List[str], None], Header()] = None):
+    return {"response": str(ask_ai(sendQuery[0])) }
+    # return {"response": sendQuery[0] }
 
 
 @app.get("/")
