@@ -1,0 +1,3 @@
+python OpenAI.pys
+
+uvicorn API:app --reload
