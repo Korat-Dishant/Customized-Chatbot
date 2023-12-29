@@ -1,20 +1,13 @@
-import { ChatContextProvider } from "./context/chatContext";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React from "react";
+import "./App.css";
+import Chatbot from "./Chatbot";
 
-import Admin from "./components/Admin"; // Import your Admin component
-import Main from "./components/Main";
-
-const App = () => {
+function App() {
   return (
-    <ChatContextProvider>
-      <Router>
-        <Switch>
-          <Route path="/admin" component={Admin} />
-          <Route path="/" component={Main} />
-        </Switch>
-      </Router>
-    </ChatContextProvider>
+    <div className="App">
+      <Chatbot />
+    </div>
   );
-};
+}
 
 export default App;

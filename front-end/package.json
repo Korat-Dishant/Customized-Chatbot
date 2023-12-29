@@ -1,22 +1,16 @@
 {
-  "name": "openAI",
-  "version": "2.0.0",
-  "private": false,
+  "name": "react-chatbot-main",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "bad-words": "^3.0.4",
-    "daisyui": "^2.51.6",
-    "moment": "^2.29.4",
-    "openai": "^3.2.1",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-drag-drop-files": "^2.3.10",
-    "react-ga4": "^2.1.0",
-    "react-icons": "^4.7.1",
-    "react-markdown": "^8.0.4",
-    "react-router-dom": "^5.3.4",
     "react-scripts": "5.0.1",
-    "react-syntax-highlighter": "^15.5.0",
-    "remark-gfm": "^3.0.1"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -26,7 +20,8 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app"
+      "react-app",
+      "react-app/jest"
     ]
   },
   "browserslist": {
@@ -40,30 +35,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.20",
-    "tailwindcss": "^3.2.4"
-  },
-  "keywords": [
-    "openai",
-    "chatgpt",
-    "text-davinci-003",
-    "dalle",
-    "dall.e",
-    "dalle2",
-    "gpt",
-    "gpt3",
-    "image generation",
-    "machine learning",
-    "conversational ai",
-    "conversation",
-    "chatbot",
-    "chat",
-    "bot",
-    "ai",
-    "ml",
-    "bot"
-  ]
+  }
 }
