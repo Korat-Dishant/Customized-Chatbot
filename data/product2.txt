@@ -98,3 +98,12 @@
     - price 6000 rupees
    - discount 15%
 
+ **Model: elite buds 5k **
+    - most elite buds you have ever seen.
+    - Clear and precise audio for conference calls and meetings.
+    - Noise-canceling microphone with flexible boom arm.
+    - Adjustable headband and comfortable ear cushions.
+    - USB and 3.5mm connectivity options.
+    - price 100000 rupees
+   - discount 25%
+
